@@ -17,16 +17,29 @@ public class Event {
     @NotBlank(message = "Name is required")
     @Size(min=3, max = 50, message = "Name must be between 3 and 50 characters")
     private String name;
+
+    @Size(min=3, max = 50, message = "Company name must be between 3 and 50 characters")
+    private String company;
+
+    @Size(min=3, max = 50, message = "Job title must be between 3 and 50 characters")
+    private String title;
+
+    private String linkedin;
+
     @Size(max=500 , message = "Description too long!")
     private String description;
+
     @NotBlank(message = "Email is required")
     @Email(message = "Invalid email. Try again")
     private String contactEmail;
 
     private EventType type;
 
-    public Event(String name, String description, String contactEmail, EventType type) {
+    public Event(String name, String company, String title, String linkedin, String description, String contactEmail, EventType type) {
         this.name = name;
+        this.company = company;
+        this.title = title;
+        this.linkedin = linkedin;
         this.description = description;
         this.contactEmail = contactEmail;
         this.type = type;
@@ -69,6 +82,30 @@ public class Event {
 
     public int getId() {
         return id;
+    }
+
+    public String getCompany() {
+        return company;
+    }
+
+    public void setCompany(String company) {
+        this.company = company;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public String getLinkedin() {
+        return linkedin;
+    }
+
+    public void setLinkedin(String linkedin) {
+        this.linkedin = linkedin;
     }
 
     @Override

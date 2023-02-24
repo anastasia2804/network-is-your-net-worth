@@ -67,4 +67,10 @@ public class EventController {
         return "redirect:/events";
     }
 
+    @GetMapping("{id}")
+    public String displaySingleContact(@PathVariable int id, Model model) {
+        model.addAttribute("event", eventRepository.findById(id));
+        return "events/single-contact";
+    }
+
 }

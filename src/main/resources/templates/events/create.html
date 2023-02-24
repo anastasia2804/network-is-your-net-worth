@@ -13,6 +13,24 @@
         <p class="error" th:errors="${event.name}"></p>
     </div>
     <div class="form-group my-2">
+        <label>Company
+            <input th:field="${event.company}" class="form-control">
+        </label>
+        <p class="error" th:errors="${event.company}"></p>
+    </div>
+    <div class="form-group my-2">
+        <label>Job Title
+            <input th:field="${event.title}" class="form-control">
+        </label>
+        <p class="error" th:errors="${event.title}"></p>
+    </div>
+    <div class="form-group my-2">
+        <label>Linked In
+            <input th:field="${event.linkedin}" class="form-control">
+        </label>
+        <p class="error" th:errors="${event.linkedin}"></p>
+    </div>
+    <div class="form-group my-2">
         <label>Description
             <input th:field="${event.description}" class="form-control">
         </label>
@@ -24,16 +42,16 @@
         </label>
         <p class="error" th:errors="${event.contactEmail}"></p>
     </div>
-    <div class="form-group" my-3>
-        <label>Type
-            <select th:field="${event.type}">
-                <option th:each="type : ${types}"
-                        th:value="${type}"
-                        th:text="${type.displayName}"
-                ></option>
-            </select>
-        </label>
-    </div>
+<!--    <div class="form-group" my-3>-->
+<!--        <label>Type-->
+<!--            <select th:field="${event.type}">-->
+<!--                <option th:each="type : ${types}"-->
+<!--                        th:value="${type}"-->
+<!--                        th:text="${type.displayName}"-->
+<!--                ></option>-->
+<!--            </select>-->
+<!--        </label>-->
+<!--    </div>-->
     <div class="form-group my-3">
         <input type="submit" value="Create" class="btn btn-success">
     </div>
