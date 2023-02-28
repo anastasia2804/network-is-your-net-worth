@@ -5,9 +5,27 @@
 <body class="container">
 <header th:replace="fragments :: header"></header>
 
-   <p th:text="${event.name}"></p>
-   <p th:text="${event.company}"></p>
-   <p th:text="${event.title}"></p>
+<div class="container-lg mt-4">
+   <div class="row justify-content-center align-items-center">
+      <div class="col-md-3 text-center">
+         <img th:src="${event.imageLink}" alt="my image" style="max-height: 300px;"/>
+      </div>
+      <div class="col-md-3 text-center text-md-start">
+         <h4><b>Name: </b><span th:text="${event.name}"></span></h4>
+         <h4><b>Company: </b><span th:text="${event.company}"></span></h4>
+         <h4><b>Job Title: </b><span th:text="${event.title}"></span></h4>
+         <h4 class="mt-3"><b>Email:</b></h4>
+         <p th:text="${event.contactEmail}"></p>
+
+      </div>
+   </div>
+   <div class="container-lg mt-4 text-center">
+      <h4 class="mt-3"><b>LinkedIn:</b></h4>
+      <p th:text="${event.linkedin}"></p>
+      <h4 class="mt-3"><b>Notes:</b></h4>
+      <p th:text="${event.description}"></p>
+   </div>
+</div>
 
 
 </body>

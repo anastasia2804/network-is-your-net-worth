@@ -33,9 +33,11 @@ public class Event {
     @Email(message = "Invalid email. Try again")
     private String contactEmail;
 
+    private String imageLink;
+
     private EventType type;
 
-    public Event(String name, String company, String title, String linkedin, String description, String contactEmail, EventType type) {
+    public Event(String name, String company, String title, String linkedin, String description, String contactEmail, EventType type, String imageLink) {
         this.name = name;
         this.company = company;
         this.title = title;
@@ -43,6 +45,7 @@ public class Event {
         this.description = description;
         this.contactEmail = contactEmail;
         this.type = type;
+        this.imageLink = imageLink;
     }
 
     public Event() {
@@ -106,6 +109,14 @@ public class Event {
 
     public void setLinkedin(String linkedin) {
         this.linkedin = linkedin;
+    }
+
+    public String getImageLink() {
+        return imageLink;
+    }
+
+    public void setImageLink(String imageLink) {
+        this.imageLink = imageLink;
     }
 
     @Override
