@@ -10,6 +10,8 @@ import org.springframework.ui.Model;
 import org.springframework.validation.Errors;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.Optional;
+
 //import java.util.ArrayList;
 //import java.util.List;
 
@@ -69,8 +71,15 @@ public class EventController {
 
     @GetMapping("{id}")
     public String displaySingleContact(@PathVariable int id, Model model) {
-        model.addAttribute("event", eventRepository.findById(id));
-        return "events/single-contact";
+        Optional<Event> optionalEvent = eventRepository.findById(id);
+        if (((Optional<?>) optionalEvent).isPresent()) {
+            Event event = optionalEvent.get();
+            model.addAttribute("event", event);
+            return "events/single-contact";
+        } else {
+            // Handle the case where the event with the given ID is not found
+            return "error";
+        }
     }
 
 }
