@@ -12,12 +12,12 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.Optional;
 
-//import java.util.ArrayList;
-//import java.util.List;
 
-/**
- * Created by Chris Bay
- */
+
+
+
+
+
 @Controller
 @RequestMapping("events")
 public class EventController {
