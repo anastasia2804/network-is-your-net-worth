@@ -32,9 +32,11 @@
 
 **Toolkit diagram:**
 
-![](https://res.cloudinary.com/dfyitssyo/image/upload/v1677617630/Strategio/RBsolutionDiagram_h9xol8.png)
+![Toolkit diagram](https://res.cloudinary.com/dfyitssyo/image/upload/v1677617630/Strategio/RBsolutionDiagram_h9xol8.png)
 
 ## Arcitecture diagram
+
+![Arcitecture diagram](https://res.cloudinary.com/dfyitssyo/image/upload/v1677688674/Strategio/RBarchitectureDiagramUpdated_wrx6cn.png)
 
 ## Prerequisites & setting up locally
 1. Make sure you have Java and JDK 19 installed on your local machine. Here is the link to dowload the latest version of JDK: 
@@ -53,10 +55,21 @@ https://ladvien.com/data-analytics-mysql-localhost-setup/
 
 5. Go to Tasks -> application and double-click **bootRun**
 
+![bootRun](https://res.cloudinary.com/dfyitssyo/image/upload/v1677612180/Strategio/gradlebootrun_wpbc8i.png)
+
 6. The server will start and run on http://localhost:8080/
 
 ## Authors
 
+[Jesus Avila](https://github.com/gitLunaDiviner)
+
+[Luke Cioffi ](https://github.com/lukecioffi)
+
+[Ammar Jivraj](https://github.com/ammarj15)
+
+[Obed Gyawu]
+
+[Anastasia Orlova](https://github.com/anastasia2804)
 
 
 
