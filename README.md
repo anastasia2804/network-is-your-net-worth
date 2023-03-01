@@ -1,0 +1,40 @@
+![Snapshot](https://res.cloudinary.com/dfyitssyo/image/upload/v1677615984/Strategio/photo_2023-02-28_15-25-55_kbywc0.jpg)
+# List of Contents
+1. About the project
+2. Tools and technologies
+3. Main features
+4. Arcitecture diagram
+5. Prerequisites & setting up locally
+6. Authors
+
+## About the project
+"Tea Time" is an application that allows you to keep a record of all the connections you make throughout your career journey. 
+
+"Tea time" lets you store their contact information including their name, phone, email address, job title, LinkedIn profile link, as well as some notes about how you met, what you talked about and some random fun facts about that person.
+
+## Tools and technologies
+
+**Tech stack:**
+
+- Java
+- Spring Boot
+- Tomcat server
+- MySQL database
+- Thymeleaf templates
+- Bootstrap for styling
+
+**Toolkit diagram:**
+
+![](https://res.cloudinary.com/dfyitssyo/image/upload/v1677617630/Strategio/RBsolutionDiagram_h9xol8.png)
+
+## Arcitecture diagram
+
+## Prerequisites & setting up locally
+1. Make sure you have Java and JDK 19 installed on your local machine. Here is the link to dowload the latest version of JDK: 
+
+https://www.oracle.com/java/technologies/downloads/
+
+2. 
+
+
+
