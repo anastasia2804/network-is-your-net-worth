@@ -40,7 +40,7 @@
 
 ## Prerequisites & setting up locally
 
-1. Fork this repo or clone it to your lcoal machine
+1. Fork this repo or clone it to your local machine
 
 2. Make sure you have Java and JDK 19 installed on your local machine. Here is the link to dowload the latest version of JDK: 
 
