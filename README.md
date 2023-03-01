@@ -39,25 +39,28 @@
 ![Arcitecture diagram](https://res.cloudinary.com/dfyitssyo/image/upload/v1677688674/Strategio/RBarchitectureDiagramUpdated_wrx6cn.png)
 
 ## Prerequisites & setting up locally
-1. Make sure you have Java and JDK 19 installed on your local machine. Here is the link to dowload the latest version of JDK: 
+
+1. Fork this repo or clone it to your lcoal machine
+
+2. Make sure you have Java and JDK 19 installed on your local machine. Here is the link to dowload the latest version of JDK: 
 
 https://www.oracle.com/java/technologies/downloads/
 
-2. Change your SDK to JDK 19 in the project's structure:
+3. Change your SDK to JDK 19 in the project's structure:
 
 ![project structure](https://res.cloudinary.com/dfyitssyo/image/upload/v1677612546/Strategio/projectstructur-sdk19_1_kjo6bb.png)
 
-3. To set up MySQL database on your local machine check out the instructions here:
+4. To set up MySQL database on your local machine check out the instructions here:
 
 https://ladvien.com/data-analytics-mysql-localhost-setup/
 
-4. To start the server navigate to Gradle toolbar (usually found on the top right side in IntelliJ)
+5. To start the server navigate to Gradle toolbar (usually found on the top right side in IntelliJ)
 
-5. Go to Tasks -> application and double-click **bootRun**
+6. Go to Tasks -> application and double-click **bootRun**
 
 ![bootRun](https://res.cloudinary.com/dfyitssyo/image/upload/v1677612180/Strategio/gradlebootrun_wpbc8i.png)
 
-6. The server will start and run on http://localhost:8080/
+7. The server will start and run on http://localhost:8080/
 
 ## Authors
 
