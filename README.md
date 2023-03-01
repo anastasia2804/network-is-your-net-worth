@@ -67,7 +67,7 @@ https://ladvien.com/data-analytics-mysql-localhost-setup/
 
 [Ammar Jivraj](https://github.com/ammarj15)
 
-[Obed Gyawu]
+[Obed Gyawu](https://github.com/obed79)
 
 [Anastasia Orlova](https://github.com/anastasia2804)
 
