@@ -1,8 +1,8 @@
 ![Snapshot](https://res.cloudinary.com/dfyitssyo/image/upload/v1677615984/Strategio/photo_2023-02-28_15-25-55_kbywc0.jpg)
 # List of Contents
 1. About the project
-2. Tools and technologies
-3. Main features
+    - Main features
+    - Tools and technologies
 4. Arcitecture diagram
 5. Prerequisites & setting up locally
 6. Authors
@@ -11,6 +11,13 @@
 "Tea Time" is an application that allows you to keep a record of all the connections you make throughout your career journey. 
 
 "Tea time" lets you store their contact information including their name, phone, email address, job title, LinkedIn profile link, as well as some notes about how you met, what you talked about and some random fun facts about that person.
+
+## Main features
+- User authentication
+- Signed-in user can add new contacts
+- Signed-in user can view contacts in a table
+- User can open an individual entry to see all the details, notes, and a photo
+- User can delete their contacts
 
 ## Tools and technologies
 
@@ -34,7 +41,25 @@
 
 https://www.oracle.com/java/technologies/downloads/
 
-2. 
+2. Change your SDK to JDK 19 in the project's structure:
+
+![project structure](https://res.cloudinary.com/dfyitssyo/image/upload/v1677612546/Strategio/projectstructur-sdk19_1_kjo6bb.png)
+
+3. To set up MySQL database on your local machine check out the instructions here:
+
+https://ladvien.com/data-analytics-mysql-localhost-setup/
+
+4. To start the server navigate to Gradle toolbar (usually found on the top right side in IntelliJ)
+
+5. Go to Tasks -> application and double-click **bootRun**
+
+6. The server will start and run on http://localhost:8080/
+
+## Authors
+
+
+
+
 
 
 
