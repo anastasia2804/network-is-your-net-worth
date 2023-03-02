@@ -1,7 +1,14 @@
 body {
     font-size: 24px;
+   /* background-image: url("https://res.cloudinary.com/dfyitssyo/image/upload/v1677694533/Strategio/aMPRBr_skbray.webp") */
+    /*background-image: url("https://res.cloudinary.com/dfyitssyo/image/upload/v1677695259/Strategio/1843c6f65c6a240fa4d368db59499d80_excsve.jpg")*/
 }
 
 .error {
     color:red;
+}
+
+.form-background {
+    background-color: rgb(245, 208, 186);
+
 }
