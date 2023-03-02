@@ -72,14 +72,44 @@ public class EventController {
     @GetMapping("{id}")
     public String displaySingleContact(@PathVariable int id, Model model) {
         Optional<Event> optionalEvent = eventRepository.findById(id);
-        if (((Optional<?>) optionalEvent).isPresent()) {
+        if (optionalEvent.isPresent()) {
             Event event = optionalEvent.get();
             model.addAttribute("event", event);
+
             return "events/single-contact";
         } else {
             // Handle the case where the event with the given ID is not found
             return "error";
         }
     }
+
+    @PostMapping("{id}/edit")
+    public String editEvent(@ModelAttribute @Valid Event newEvent, Errors errors, Model model) { //Spring will create a newEvent object for us
+
+        if(errors.hasErrors()){
+            model.addAttribute("title", "Create Event");
+            return "events/edit";
+        }
+
+        eventRepository.save(newEvent);
+        return "redirect:/events";
+    }
+
+
+
+    @GetMapping("{id}/edit")
+    public String editSingleContact(@PathVariable int id, Model model,@ModelAttribute @Valid Event newEvent, Errors errors) {
+        Optional<Event> optionalEvent = eventRepository.findById(id);
+        if (optionalEvent.isPresent()) {
+            Event event = optionalEvent.get();
+            model.addAttribute("event", event);
+            eventRepository.deleteById(id);
+            return "events/edit";
+        } else {
+            // Handle the case where the event with the given ID is not found
+            return "error";
+        }
+    }
+
 
 }
