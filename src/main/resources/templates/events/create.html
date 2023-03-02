@@ -5,6 +5,11 @@
 
 <header th:replace="fragments :: header"></header>
 
+<div class="container-lg mt-4 text-md-start">
+    <div class="row justify-content-center align-items-center">
+        <h3 class="text-center display-6 my-3 text-muted"> Start adding your new connections here </h3>
+        <p class="lead my-2 text-muted text-center">In the notes you can include a story of how you met, what they're working on, fun facts and observations about them, or any memorable parts of the conversations two of you had</p>
+        <div class="col-lg-5 text-center text-md-start, form-background my-3">
 <form method="post">
     <div class="form-group my-2">
         <label>Name
@@ -25,22 +30,22 @@
         <p class="error" th:errors="${event.title}"></p>
     </div>
     <div class="form-group my-2">
-        <label>Linked In
+        <label>LinkedIn
             <input th:field="${event.linkedin}" class="form-control">
         </label>
         <p class="error" th:errors="${event.linkedin}"></p>
-    </div>
-    <div class="form-group my-2">
-        <label>Description
-            <input th:field="${event.description}" class="form-control">
-        </label>
-        <p class="error" th:errors="${event.description}"></p>
     </div>
     <div class="form-group my-2">
         <label>Contact Email
             <input th:field="${event.contactEmail}" class="form-control">
         </label>
         <p class="error" th:errors="${event.contactEmail}"></p>
+    </div>
+    <div class="form-group my-2">
+        <label>Notes
+            <input th:field="${event.description}" class="form-control">
+        </label>
+        <p class="error" th:errors="${event.description}"></p>
     </div>
     <div class="form-group my-2">
         <label>Image Link
@@ -59,10 +64,13 @@
 <!--        </label>-->
 <!--    </div>-->
     <div class="form-group my-3">
-        <input type="submit" value="Create" class="btn btn-success">
+        <input type="submit" value="Create Contact" class="btn btn-lg btn-success">
     </div>
 
 </form>
+        </div>
+    </div>
+</div>
 
 </body>
 </html>

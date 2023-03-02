@@ -5,21 +5,24 @@
 
 <header th:replace="fragments :: header"></header>
 
+<div class="container-lg mt-4 text-md-start">
+    <div class="row justify-content-center align-items-center">
+        <h3 class="text-center display-6 mt-3 mb-4 text-muted"> Delete contacts here</h3>
+    </div>
 <form method="post">
-
-
       <th:block th:each="event : ${events}">
          <div class="form-group">
          <label>
-            <span th:text="${event.name}"></span>
-            <input type="checkbox" name="eventIds" th:value="${event.id}">
+             <input type="checkbox" name="eventIds" th:value="${event.id}">
+             <span th:text="${event.name}"></span>
          </label>
          </div>
       </th:block>
 
 
-   <input type="submit" value="Delete" class="btn btn-danger">
+   <input type="submit" value="Delete" class="btn btn-lg btn-danger my-3">
 </form>
+</div>
 
 </body>
 </html>

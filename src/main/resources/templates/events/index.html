@@ -5,7 +5,11 @@
 
 <header th:replace="fragments :: header"></header>
 
-<table class="table table-striped">
+<div class="container-lg mt-4 text-md-start">
+    <div class="row justify-content-center align-items-center">
+        <h3 class="text-center display-6 mt-3 mb-4 text-muted"> Here is your connections list. Your network is growing! </h3>
+    </div>
+<table class="table table-hover table-striped">
     <thead>
         <tr>
 <!--            <th>ID</th>-->
@@ -21,7 +25,8 @@
     <tr th:each="event : ${events}">
 <!--        <td th:text="${event.id}"></td>-->
         <td>
-            <a th:href="@{/events/{id}(id=${event.id})}" th:text="${event.name}">
+            <a th:href="@{/events/{id}(id=${event.id})}" th:text="${event.name}" class="text-decoration-none
+g">
             </a>
         </td>
         <td th:text="${event.company}"></td>
@@ -32,6 +37,7 @@
 <!--        <td th:text="${event.type.displayName}"></td>-->
     </tr>
 </table>
+</div>
 
 </body>
 </html>
