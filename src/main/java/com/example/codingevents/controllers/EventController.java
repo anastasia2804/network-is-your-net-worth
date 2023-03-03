@@ -84,7 +84,7 @@ public class EventController {
     }
 
     @PostMapping("{id}/edit")
-    public String editEvent(@ModelAttribute @Valid Event newEvent, Errors errors, Model model) { //Spring will create a newEvent object for us
+    public String editEvent(@ModelAttribute @Valid Event newEvent, Errors errors, Model model,@PathVariable int id) { //Spring will create a newEvent object for us
 
         if(errors.hasErrors()){
             model.addAttribute("title", "Create Event");
@@ -92,6 +92,7 @@ public class EventController {
         }
 
         eventRepository.save(newEvent);
+        eventRepository.deleteById(id);
         return "redirect:/events";
     }
 
@@ -103,7 +104,7 @@ public class EventController {
         if (optionalEvent.isPresent()) {
             Event event = optionalEvent.get();
             model.addAttribute("event", event);
-            eventRepository.deleteById(id);
+
             return "events/edit";
         } else {
             // Handle the case where the event with the given ID is not found
